@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Smart School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <a href="#" class="navbar-brand">SMART SCHOOL</a>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Staff Details</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Staff Attendance</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Biometric Attendance</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Feedback</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Staff Leaves</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Staff </a></li>
+            <li class="nav-item"><a href="#" class="nav-link"> Report</a></li>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <div class="navbar-buttons">
+            <a href="#" class="btn btn-orange">Under Implementation Track Progress</a>
+            <div class="dropdown">
+              <button class="btn btn-blue">Get Help <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a href="#">FAQ</a>
+                <a href="#">Contact Support</a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-info">
+            <span class="academic-year">AY-2023-2024</span>
+            <div class="icons">
+              <a href="#"><i class="fa fa-home"></i></a>
+              <a href="#"><i class="fa fa-bell"></i></a>
+              <a href="#"><i class="fa fa-search"></i></a>
+              <a href="#"><i class="fa fa-address-book"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section>
+        <div class="container">
+            <div class="item" id="hr">HR /</div>
+            <div class="item" id="staff">Staff Details /</div>
+            <div class="item" id="create">Create Staff Details</div>
+        </div>
+
+        <div class="container1">
+            <div class="button">
+                <i class="fas fa-arrow-left back-arrow"></i>
+                Back
+              </div>
+            <div class="nstaff">Enroll New Staff</div>
+        </div>
+
+        <div class="container2">
+            <div class="branch-details">
+                <h2>BRANCH: SHAHEEN JUNIOR COLLEGE</h2>
+                <div class="container3">
+                  <h3>Staff Details</h3></div>
+                    <div class="container4">
+                          <div class="row">
+                            <div class="col">
+                              <label for="employee-status">Employment Status:</label>
+                              <div class="employee-row">
+                                <select id="employee-status">
+                                  <option value="temporary">Temporary</option>
+                                  <option value="permanent">Permanent</option>
+                                  <option value="owner">Owner</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="staff-type">
+                                <fieldset>
+                                  <legend>Staff Type:</legend>
+                                  <div class="radio-row">
+                                    <input type="radio" id="teaching" name="staff-type" value="teaching">
+                                    <label for="teaching">Teaching</label>
+                                    <input type="radio" id="non-teaching" name="staff-type" value="non-teaching">
+                                    <label for="non-teaching">Non-Teaching</label>
+                                    <input type="radio" id="transport" name="staff-type" value="transport">
+                                    <label for="transport">Transport</label>
+                                  </div>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <label for="staff-department">Staff Department:</label>
+                              <div class="radio-row">
+                                <select id="staff-department">
+                                  <option value="temporary">-Select Department-</option>
+                                  <option value="computer">Computer</option>
+                                  <option value="electrical">Electrical</option>
+                                  <option value="mechanical">Mechanical</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <label for="employee-category">Employee Category:</label>
+                              <div class="radio-row">
+                                <select id="employee-category">
+                                  <option value="temporary">-Select Category-</option>
+                                  <option value="teaching">Teaching</option>
+                                  <option value="non-teaching">Non-Teaching</option>
+                                  <option value="admin">Admin</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <label for="designation">Designation:</label>
+                              <div class="designation-row">
+                                <select id="designation">
+                                  <option value="temporary">-Select Department-</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col">
+                              <label for="qualification-type">Qualification Type:</label>
+                              <div class="qualification-row">
+                                <select id="qualification-type">
+                                  <option value="temporary">-Select Qualification-</option>
+                                </select>
+                              </div>
+                            </div>
+ 
+ 
+                            <div class="col">
+                              <label for="Education Qualification">Education Qualification:</label>
+                              <div class="employee-row">
+                                <select id="Education Qualification">
+                                  <option value="temporary">-Select Qualification-</option>
+                                </select>
+                              </div>
+                            </div>
+                          
+                            <div class="col">
+                              <label for="Access Level">Access Level:</label>
+                              <div class="employee-row">
+                                <select id="Access Level">
+                                  <option value="temporary">-Select Access Level-</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                    
+            
+            <div class="row">
+              <div class="col">
+                <label for="employee-stat">Trained As:</label>
+                <div class="employee-row">
+                  <select id="employee-stat">
+                    <option value="temporary">-Select Level-</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <label for="CTET-qualified">CTET Qualified:</label>
+                <div class="radio-row1">
+                    <input type="radio" id="ctet-yes" name="ctet-qualified" value="yes">
+                    <label for="ctet-yes">YES</label>
+                    <input type="radio" id="ctet-no" name="ctet-qualified" value="no">
+                    <label for="ctet-no">NO</label>
+                </div>
+            </div>
+            
+            </div>
+                    </div>
+                    <div class="container3">
+                      <h3>Personal Details</h3></div>
+                        <div class="container4">
+                              <div class="row">
+                                <div class="col">
+                                  <label for="employee-status">First Name:</label>
+                                  <div class="employee-row">
+                                    <input type="text">
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <label for="employee-status">Middle Name:</label>
+                                  <div class="employee-row">
+                                    <input type="text">
+                                  </div>
+                                </div>
+                                <div class="col">
+                                    <label for="employee-status">Last Name:</label>
+                                    <div class="employee-row">
+                                      <input type="text">
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <label for="employee-status">Mobile No:</label>
+                                    <div class="employee-row">
+                                      <input type="text">
+                                    </div>
+                                  </div></div>
+
+
+                              <div class="row">
+                                <div class="col">
+                                  <label for="employee-status">Emergency Contact No:</label>
+                                  <div class="employee-row">
+                                    <input type="text">
+                                  </div>
+                                </div>
+    
+                              <div class="col">
+                                  <label for="CTET-qualified">Gender:</label>
+                                  <div class="radio-row2">
+                                      <input type="radio" id="ctet-yes" name="ctet-qualified" value="yes">
+                                      <label for="ctet-yes">Male</label>
+                                      <input type="radio" id="ctet-no" name="ctet-qualified" value="no">
+                                      <label for="ctet-no">Female</label>
+                                      <input type="radio" id="ctet-no" name="ctet-qualified" value="no">
+                                      <label for="ctet-no">other</label>
+                                  </div>
+                              </div>
+     
+     
+                              <div class="col">
+                                <label for="date-of-birth">Date of Birth:</label>
+                                <div class="employee-row">
+                                    <input type="date" id="date-of-birth" name="date-of-birth">
+                                </div>
+                            </div>
+                            
+                              
+                                <div class="col">
+                                  <label for="Access Level">Email Id:</label>
+                                  <div class="employee-row">
+                                    <input type="email" rows="4" cols="35">
+                                  </div>
+                                </div>
+                              </div>
+                        
+                
+                <div class="row">
+                  <div class="col">
+                    <label for="employee-stat">Permanent Address:</label>
+                    <div class="employee-row">
+                      <textarea  rows="4" cols="35"></textarea>
+                    </div>
+                  </div>
+                    <div class="col">
+                      <label for="employee-stat">Corresponding Address:</label>
+                      <div class="employee-row">
+                        <textarea  rows="4" cols="35"></textarea>
+                      </div>
+                    </div>
+
+                  <div class="col">
+                    <label for="employee-stat">Religion:</label>
+                    <div class="employee-row">
+                      <select id="employee-stat">
+                        <option value="temporary">-Hindu-</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                
+                </div>
+              </div>
+          
+       
+        
+
+
+          <div class="container3">
+                  <h3>Other Details</h3></div>
+                    <div class="container4">
+                          <div class="row">
+                            <div class="col">
+                              <label for="Access Level">Aadhar No:</label>
+                              <div class="employee-row">
+                                <input type="email" rows="4" cols="35">
+                              </div>
+                            </div>
+                      
+                            <div class="col">
+                              <div class="staff-type">
+                                <label for="staff-department">PAN No:</label>
+                              <div class="radio-row">
+                                <input type="text">
+                              </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <label for="date-of-birth">Date of Joning:</label>
+                              <div class="employee-row">
+                                  <input type="date" id="date-of-birth" name="date-of-birth">
+                              </div>
+                          </div>
+                            <div class="col">
+                              <label for="employee-category">Staff Reference Code:</label>
+                              
+                              <input type="text">
+                            </div>
+                          </div>
+                          <div class="row">
+                           
+                            <div class="col">
+                              <label for="CTET-qualified">Salary Pay Type:</label>
+                              <div class="radio-row2">
+                                  <input type="radio" id="ctet-yes" name="ctet-qualified" value="yes">
+                                  <label for="ctet-yes">Consolidate</label>
+                                  <input type="radio" id="ctet-no" name="ctet-qualified" value="no">
+                                  <label for="ctet-no">Pay</label>
+                                  <input type="radio" id="ctet-no" name="ctet-qualified" value="no">
+                                  <label for="ctet-no">other</label>
+                              </div>
+                          </div>
+                           
+ 
+                            <div class="col">
+                              <label for="Education Qualification">Government Id/ Resident No :</label>
+                            <input type="text">
+                              </div>
+                          
+                          
+                            <div class="col">
+                              <label for="Access Level">Citizenship:</label>
+                              <div class="employee-row">
+                                <select id="Access Level">
+                                  <option value="temporary">-Indian-</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        
+                      
+                          <div class="row">  
+            
+                           <div class="but">
+                                    <button class="button">Save & Continue</button>
+                            </div>
+          </div>
+          </div>
+          </div>  
+        </div>       
+      </section>
+      
+</body>
+</html>

@@ -1,0 +1,201 @@
+:root {
+  --main-bg-color:blue;
+  --main-text-color:pink;
+  --second-text-color: blue;
+  --second-bg-color: pink;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.second-text {
+  color: var(--second-text-color);
+}
+
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to right,
+    #211c2a,
+    #cf1485,
+    #f7a1d2,
+    #05542d,
+    #e67002
+  );
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.header{
+  display: grid;
+  grid-template-columns: 600px 250px 80px 150px 120px;
+  gap: 10px;
+  padding: 10px;
+  justify-content: flex-end;
+}
+
+.header .box1 h4 {
+  font-weight: bold;
+  color: rgb(186, 47, 233);
+  margin: 0;
+  text-align: left;
+}
+
+.header1 {
+  display: flex;
+  justify-content:space-around;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #fff; /* Set background color */
+  border-radius: 5px; /* Add border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.container1 ul {
+  display: flex; /* Use flexbox */
+  list-style: none; /* Remove default list styles */
+  border: 2px solid #fff;
+  background-color: #fff; /* Set background color */
+  border-radius: 5px; /* Add border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container1 ul li {
+  margin-right: 10px; /* Add margin between list items */
+
+}
+.head{
+  display: flex;
+  background-color: #fff; 
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Add border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make it cover the full width */
+}
+
+.head h5{
+  border-radius: 5px; /* Add border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  left: 0px;
+}
+
+.head .btn-primary {
+  background-color: #8179ec; /* Set button background color */
+  border-color: #6753ec; /* Set button border color */
+}
+
+.headings {
+  background-color:aliceblue; /* Set background color for headings */
+  padding: 10px 20px; /* Add padding to headings */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.headings h5{
+  padding: auto;
+  border-radius: 1px solid;
+}
+
+.headings{
+  background-color: rgb(254, 176, 231);
+  color: rgb(79, 47, 238);
+}
+
+.details{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  row-gap: 15px;
+  column-gap: 15px;
+  text-decoration-color: rgb(82, 82, 228);
+
+  border: 6px solid #2ca30c;
+  background-color: #fff; /* Set background color */
+  border-radius: 4px; /* Add border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form container */
+.form-container {
+  border: 3px solid #14cd92; /* Add border */
+ padding: 20px;/* Add padding */
+  margin-bottom: 20px; /* Add margin */
+}

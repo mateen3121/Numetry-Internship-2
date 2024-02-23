@@ -1,0 +1,63 @@
+/*variable hoisting
+console.log(hem);
+var hem 
+hem = 5;
+
+
+// function hoisting
+printcc();
+function printcc() {
+  console.log("Hello Hemanth!");
+}
+
+
+function outerFunctionimplementation() {
+  var outerVariable = "I am from outer function";
+  
+  function innerFunctionimplementation() {
+    console.log(outerVariable);
+  }
+  
+  return innerFunction;
+}
+
+var innerFunc = outerFunctionimplementation();
+innerFuncimplementation(); 
+function createFunctions() {
+  var result = [];
+  
+  for (var i = 0; i < 5; i++) {
+    result.push(function() {
+      console.log(i);
+    });
+  }
+  
+  return result;
+}
+
+var functions = createFunctions();
+functions[0](); // Output: 5
+functions[1](); // Output: 5
+
+*/
+
+function createFunctions() {
+  var result = [];
+  
+  for (var i = 0; i < 5; i++) {
+    (function(num) {
+      result.push(function() {
+        console.log(num);
+      });
+    })(i);
+  }
+  
+  return result;
+}
+
+var functions = createFunctions();
+functions[2](); 
+functions[3](); 
+
+/* output will be 2 & 3
+

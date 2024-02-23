@@ -1,0 +1,355 @@
+bode{
+    padding: 10px 70px;
+}
+.navbar {
+    display: flex;
+    position:fix;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #c6d9ed;
+  }
+  
+  .navbar-left .navbar-brand {
+    font-weight: bold;
+    font-size: 50px;
+    color: #275760;
+    text-decoration: none;
+    margin-left:90px;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin-left:50px;
+    font-size: 20px;
+  }
+  
+  .nav-item {
+    display: inline;
+  }
+  
+  .nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4c4040;
+  }
+  
+  .nav-link:hover {
+    color: #0098ac;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-buttons {
+    margin-right: 20px;
+    font-size: 17px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    
+  }
+  
+  .btn-orange {
+    background-color: #fa2302;
+    color: #fff;
+  }
+  
+  .btn-blue {
+    background-color: rgb(106, 106, 227);
+    color: #fff;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #604343;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .academic-year {
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-bottom: 18px;
+  }
+  
+  .icons a {
+    margin-left: 10px;
+    margin-top: 18px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+
+ /* Style for the container */
+ .container {
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    display: flex;
+    align-items:left;
+    box-shadow: 0 2px 4px rgba(0.5, 0, 0.5, 0.7); /* Optional: Add shadow */
+  }
+
+  /* Style for the items */
+  .item {
+    font-size: 20px;
+    margin-right: 10px;
+    display: flex;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+
+  /* Style for item hover */
+  .item:hover {
+    color: #3e5e7d; /* Change color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .container1 {
+    background-color: white;
+    margin-top: 20px;
+    color: black;
+    padding: 10px 30px;
+    display: flex;
+    align-items:left;
+    box-shadow: 0 2px 4px  rgba(0.5, 0, 0.5, 0.7); /* Optional: Add shadow */
+  }
+  /* Style for the blue button */
+  .button {
+    background-color:#3e5e7d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    float:left;
+  }
+
+  /* Style for the back arrow icon */
+  .back-arrow {
+    margin-right: 5px;
+  }
+
+  /* Style for the button hover */
+  .button:hover {
+    background-color: #93e8cd; /* Darker blue on hover */
+  } 
+
+  .nstaff{
+    font-size:20px;
+    color:rgb(84, 84, 213);
+    margin-left: 20px;
+    font-weight: bold;
+  }
+
+  /* Style for the container */
+ .container2 {
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    display: flex;
+    align-items:center;
+    box-shadow: 0 2px 4px rgba(0.5, 0, 0.5, 0.7); /* Optional: Add shadow */
+    float:bottom;
+  }
+
+
+  /* Style for the branch and staff details div */
+  .branch-details {
+    align-items:center;
+    margin-top: 10px;
+    font-weight: bold;
+  
+  }
+  .branch-details h2{
+    margin-left:550px;
+    
+  }
+  /* Style for the container */
+  .container3 {
+    color: black;
+    padding: 10px 30px;
+    display: flex;
+    align-items:center;
+    box-shadow: 0 2px 4px rgba(0.5, 0, 0.5, 0.7); /* Optional: Add shadow */
+    float:bottom;
+    width:135%;
+    margin-left:20px;
+    margin-right:50px;
+    height:35px;
+    background-color: rgb(0, 179, 203);
+    text-align: left;
+    font-size:20px;
+  }
+  
+  .staff-details h3{
+    padding:5px;
+    margin-left:25px;
+  }
+
+  
+  
+  /* Style for container4 */
+  .container4 {
+    margin-top:1px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    width:135%;
+    margin-left:20px;
+    margin-right:50px;
+    padding: 10px 30px;
+    align-items:center;
+    box-shadow: 0 2px 4px rgba(0.5, 0, 0.5, 0.7); /* Optional: Add shadow */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+  
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .col {
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing between columns */
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  input[type="radio"] {
+    width: 50%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .radio-row {
+    display: flex;        /* Set the container to flex */
+    flex-direction: row;  /* Arrange the children in a row */
+    align-items: center;  /* Align the items vertically in the center */
+  }
+  
+  .radio-row input[type="radio"],
+  .radio-row label {
+    margin-right: 10px;   /* Adjust spacing between radio buttons and labels */
+  }
+  
+
+ 
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .radio-row1 {
+  }
+  
+  .radio-row1 input[type="radio"] {
+    margin-right: 0px; /* Adjust spacing between radio buttons */
+  }
+  
+  .radio-row1 label {
+    margin-right: 1px; /* Adjust spacing between radio buttons and labels */
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .radio-row2 {
+    margin-left: 0px;
+    display: flex;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.employee-row {
+    display: flex;
+    align-items: center; /* Align input and image vertically */
+}
+
+input[type="date"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70%; /* Adjust width as needed */
+}
+

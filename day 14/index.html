@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Image Styling</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        /* img 4 */
+        .image-txt {
+            transform: translate(-350%, -0%);
+            font-size: 30px;
+            font-weight: bold;
+            color: antiquewhite;
+        }
+
+        /* 13 */
+        .blur {
+            filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="text-black fontbold flex justify-center font-bold p-6 text-5xl bg-gray-100 pb-12">
+        <p>Image Styling</p>
+    </div>
+
+    <div class="gap-12  bg-gray-100 bg-gray-100">
+        <div class="image-container">
+            <!-- 1-3 -->
+            <img class="bg-cover h-64 w-64 border-8 border-black flex flex-col" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Img Border</p>
+
+            <img class="bg-cover h-64 w-64 border-2 border-black rounded-full flex flex-col " src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Img Radius</p>
+
+            <img class="bg-cover h-64 w-64 opacity-50 flex flex-col" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Img Opacity</p>
+        </div> <br><br>
+
+        <div class="image-container">
+            <!-- 4-6 -->
+            <img class="relative bg-cover h-64 w-64 ml-8 flex flex-col" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Placing text On Img</p>
+            <p class="image-txt">Soccer</p>
+
+            <img class="bg-cover h-64 w-64 flex flex-col transform scale-x-[-1]" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold transform scale-110 flex items-center">Img x Transform</p>
+
+            <img class="bg-cover h-64 w-64 flex flex-col transform scale-y-[-1]" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold transform scale-110 flex items-center">Img y Transform</p>
+        </div><br><br>
+
+
+        <div class="image-container">
+            <!-- 7-9 -->
+            <img class="bg-cover h-64 w-64 flex flex-col transform scale-y-[-1] scale-x-[-1]" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold transform scale-110 flex items-center">Img x-y Transform</p>
+
+            <img class="relative bg-cover h-64 w-64 flex flex-col filter brightness-150" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Img brightness</p>
+
+            <img class="relative bg-cover h-64 w-64 flex flex-col contrast-150" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Img contrast</p>
+        </div><br><br>
+
+
+        <div class="image-container">
+            <!-- 10-12 -->
+            <img class="relative bg-cover h-64 w-32 flex flex-col " src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Img width and Height</p>
+
+            <img class="relative bg-cover h-64 w-64 flex flex-col border-4 border-black border-dotted" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Img dotted border</p>
+
+            <img class="relative bg-cover h-64 w-64 flex flex-col border-4 border-black border-dashed" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Img dashed border</p>
+        </div><br><br>
+
+
+        <div class="image-container">
+            <!-- 13-15 -->
+            <img class="relative bg-cover h-64 w-64 flex flex-col border-4 border-black border-double" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Img double border</p>
+
+            <img class="relative bg-cover h-64 w-64 flex flex-col transform rotate-90" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">transform rotate-90</p>
+
+            <img class="relative bg-cover h-64 w-64 flex flex-col blur" src="img2.jpg" alt="Styled Image">
+            <p class="text-black font-semibold flex items-center">Img blur</p>
+        </div>
+    </div>
+</body>
+</html>
